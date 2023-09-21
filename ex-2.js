@@ -12,7 +12,22 @@ const employees = [
   },
 ];
 // Start coding here
-let alex;
-let alexHobbies;
-let alexAndJamesAge;
-const updateEmployees = employees;
+let alex = employees[1].name;
+employees[1].hobbies.unshift("Watching Basketball")
+let alexHobbies = employees[1].hobbies;
+let alexAndJamesAge = employees[0].age + employees[1].age;
+const updateEmployees = [
+  {
+    name: "Alicia",
+    age: 29,
+    hobbies: ["Shopping", "Reading novels"],
+  },
+  {
+    name: "Kody",
+    age: 19,
+    hobbies: ["Computer games", "Wakeboard"],
+  },
+];
+
+delete updateEmployees[1];
+
