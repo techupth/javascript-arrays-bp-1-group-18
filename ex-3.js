@@ -48,3 +48,11 @@ let isArray;
 let creditCardTypeOfBlindermann;
 let totalPurchaseOfJoannet;
 let totalPurchaseOfDary;
+
+isArray = (Array.isArray(orders));
+creditCardTypeOfBlindermann = orders[2].creditCardType;
+orders[2].creditCardType = "Visa";
+totalPurchaseOfJoannet = orders[3].productQuantity;
+totalPurchaseOfDary = orders[1].productPrice * orders[1].productQuantity;
+orders.shift(0);
+console.log(orders);
